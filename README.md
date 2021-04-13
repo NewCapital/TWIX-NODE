@@ -79,7 +79,7 @@ The folder where the generated config, docker files and data are stored. The fol
 
 -   Node 10+
 -   Docker
--   Docker Compose
+-   Docker Compose 1.29+
 
 Validate your environment by running:
 
@@ -87,7 +87,6 @@ Validate your environment by running:
 node -v
 docker -v
 docker-compose -v
-(must be 1.29 and up)
 ```
 
 Check your user can run docker without sudo:
