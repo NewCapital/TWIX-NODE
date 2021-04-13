@@ -1,0 +1,146 @@
+initialCurrencyAtomicUnits: 420000000000000
+maxMosaicAtomicUnits: 5000000000000000
+totalChainImportance: 420000
+minHarvesterBalance: 200
+maxHarvesterBalance: 420000
+minVoterBalance: 2000
+networkType: 152
+minNamespaceDuration: 1m
+assemblies: 'api, dual, peer'
+harvestBeneficiaryPercentage: 15
+batchVerificationRandomSource: /dev/urandom
+currencyMosaicId: 
+harvestingMosaicId: 
+baseNamespace: lared
+currencyName: 'moneda'
+harvestingName: 'red'
+votingSetGrouping: 180
+maxSecretLockDuration: 30d
+maxNamespaceDuration: 365d
+namespaceGracePeriodDuration: 2m
+blockGenerationTargetTime: 30s
+nemesisGenerationHashSeed: 
+nemesisSignerPublicKey: 
+sinkAddress: TBCGCKI6K5Z5BUL7WXTNXRTHP4WBZWCTZ6YKK7Y
+harvestNetworkFeeSinkAddress: 
+mosaicRentalFeeSinkAddress: 
+namespaceRentalFeeSinkAddress: 
+faucetUrl: ''
+symbolServerToolsImage: symbolplatform/symbol-server:tools-gcc-0.10.1.8
+symbolServerImage: symbolplatform/symbol-server:gcc-0.10.1.8
+minPartnerNodeVersion: 0.10.0.7
+maxPartnerNodeVersion: 0.10.1.8
+serverVersion: 0.10.1.8
+knownRestGateways:
+    - ''
+    - ''
+
+trustedHosts:
+inflation:
+    starting-at-height-1: 990
+    starting-at-height-40430: 989
+    starting-at-height-80640: 992
+    starting-at-height-362880: 965
+    starting-at-height-403200: 942
+    starting-at-height-443520: 924
+    starting-at-height-483840: 909
+    starting-at-height-524160: 897
+    starting-at-height-564480: 886
+    starting-at-height-604800: 876
+    starting-at-height-645120: 868
+    starting-at-height-685440: 846
+    starting-at-height-725760: 827
+    starting-at-height-766080: 809
+    starting-at-height-806400: 794
+    starting-at-height-846720: 779
+    starting-at-height-887040: 767
+    starting-at-height-927360: 755
+    starting-at-height-967680: 744
+    starting-at-height-1008000: 724
+    starting-at-height-1048320: 706
+    starting-at-height-1088640: 689
+    starting-at-height-1128960: 673
+    starting-at-height-1169280: 659
+    starting-at-height-1209600: 645
+    starting-at-height-1249920: 632
+    starting-at-height-1290240: 620
+    starting-at-height-1330560: 609
+    starting-at-height-1370880: 598
+    starting-at-height-2217600: 397
+    starting-at-height-3064320: 320
+    starting-at-height-3911040: 276
+    starting-at-height-4757760: 248
+    starting-at-height-5604480: 228
+    starting-at-height-6451200: 214
+    starting-at-height-7297920: 203
+    starting-at-height-8144640: 194
+    starting-at-height-9152640: 184
+    starting-at-height-10241280: 174
+    starting-at-height-11491200: 164
+    starting-at-height-12862080: 154
+    starting-at-height-14434560: 144
+    starting-at-height-16168320: 135
+    starting-at-height-18144000: 126
+    starting-at-height-20321280: 117
+    starting-at-height-22780800: 109
+    starting-at-height-25522560: 101
+    starting-at-height-28586880: 94
+    starting-at-height-32054400: 87
+    starting-at-height-35884800: 80
+    starting-at-height-40239360: 74
+    starting-at-height-45077760: 68
+    starting-at-height-50520960: 63
+    starting-at-height-56568960: 58
+    starting-at-height-63383040: 53
+    starting-at-height-71003520: 49
+    starting-at-height-79551360: 45
+    starting-at-height-89107200: 41
+    starting-at-height-99832320: 38
+    starting-at-height-111807360: 35
+    starting-at-height-125233920: 32
+    starting-at-height-140273280: 29
+    starting-at-height-157127040: 27
+    starting-at-height-175996800: 24
+    starting-at-height-197124480: 22
+    starting-at-height-220792320: 20
+    starting-at-height-247322880: 19
+    starting-at-height-276998400: 17
+    starting-at-height-310262400: 0
+knownPeers:
+    api-node:
+        - publicKey: c461315ff50a4b344b7349ab9377df72f5db63fef72cbb4fdf8b0b00b616056d
+          endpoint:
+              host: {{URL}}
+              port: 7900
+          metadata:
+              name: dual-1
+              roles: Api,Peer,Voting
+        - publicKey: 74b0bf69aa7c6c912698978da8e7aa6ccf461899c93b4c83cdbba95bb98956af
+          endpoint:
+              host: {{URL}}
+              port: 7900
+          metadata:
+              name: dual-2
+              roles: Api,Peer,Voting
+    peer-node:
+        - publicKey: 8b9912e15040a59a03dd74ae81ad5135d2a7177859fa83af4ec9fce7d9d5048a
+          endpoint:
+              host: {{URL}}
+              port: 7900
+          metadata:
+              name: peer-1
+              roles: Peer,Voting
+        - publicKey: c461315ff50a4b344b7349ab9377df72f5db63fef72cbb4fdf8b0b00b616056d
+          endpoint:
+              host: {{URL}}
+              port: 7900
+          metadata:
+              name: dual-1
+              roles: Api,Peer,Voting
+        - publicKey: 74b0bf69aa7c6c912698978da8e7aa6ccf461899c93b4c83cdbba95bb98956af
+          endpoint:
+              host: {{URL}}
+              port: 7900
+          metadata:
+              name: dual-2
+              roles: Api,Peer,Voting
