@@ -87,6 +87,7 @@ Validate your environment by running:
 node -v
 docker -v
 docker-compose -v
+(must be 1.29 and up)
 ```
 
 Check your user can run docker without sudo:
