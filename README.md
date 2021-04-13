@@ -138,13 +138,28 @@ twix-node compose
 twix-node run -d
 ```
 
-
+NOTE: Please open 7900 and 3000 for communication with network
 
 If you need to start fresh, you many need to sudo remove the target folder (docker volumes dirs may be created using sudo). Example:
 
 ```
 sudo rm -rf ./target
 ```
+
+# Enabling harvesting
+
+
+TWIX-NODE creates peer nodes with remote harvesting enabled by default, but they still need to be registered by announcing the AccountKeyLink and VrfKeyLink transactions to the network.
+
+This can be done by TWIX-NODE too, but it needs to be a step separated from twix-node start because funds are required to announce transactions.
+
+Once the node is running with twix-node start and you have funded its account, from a different terminal (but from the same folder), simply type:
+
+```
+twix-node link
+```
+
+
 
 # E2E Testing support
 
@@ -230,6 +245,7 @@ It's recommended to reuse the same server for multiple tests by using `beforeAll
 If you want to contribute to this tool, clone this repo and run:
 
 ```
+npm i
 npm install -g
 ```
 
