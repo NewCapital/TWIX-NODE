@@ -79,7 +79,7 @@ The folder where the generated config, docker files and data are stored. The fol
 
 -   Node 10+
 -   Docker
--   Docker Compose 1.29+
+-   Docker Compose 1.29+ (better to use https://docs.docker.com/engine/install/ubuntu/)
 
 Validate your environment by running:
 
