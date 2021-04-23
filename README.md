@@ -75,11 +75,48 @@ The folder where the generated config, docker files and data are stored. The fol
 -   `./docker`: the generated docker-compose.yml, mongo init scripts and server basic bash scripts. 
 -   `./reports`: the location of the generated reports.
 
+# Intro
+
+-   Tested well on Ubuntu 18.04 TLS
+-   Don't run under root, run under power user:
+
+```
+adduser powerusername
+usermod -aG sudo powerusername
+```
+
 # Requirements
 
 -   Node 10+
 -   Docker
 -   Docker Compose 1.29+ (better to use https://docs.docker.com/engine/install/ubuntu/)
+
+# Step-by-step
+
+You may need NVM to manage node version
+
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+```
+
+To use NVM, you may need to logout and login to your session
+Install Node 12:
+
+```
+nvm install 12
+nvm use 12
+```
+
+Get the latest version of docker and docker compose:
+
+```
+sudo curl -fsSL https://get.docker.com -o get-docker.sh 
+sudo sh get-docker.sh
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo groupadd docker
+sudo usermod -aG docker $USER
+```
 
 Validate your environment by running:
 
@@ -102,6 +139,22 @@ Got permission denied while trying to connect to the Docker daemon socket at uni
 ```
 
 Please follow this [guide](https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket).
+
+Get TWIX Node:
+
+```
+git clone https://github.com/NewCapital/TWIX-NODE.git
+```
+
+Install TWIX NODE
+
+```
+cd TWIX-NODE
+npm i
+npm install -g
+cd ..
+```
+Logout and Login
 
 # Usage
 
@@ -153,12 +206,29 @@ TWIX-NODE creates peer nodes with remote harvesting enabled by default, but they
 
 This can be done by TWIX-NODE too, but it needs to be a step separated from twix-node start because funds are required to announce transactions.
 
+You can find the main address to fund in the file located at node/target/addresses.yml
+
+To decrypt your private keys, you can use this command:
+
+```
+twix-node decrypt --source target/addresses.yml --destination plain-addresses.yml
+```
+
+The decrypted file with your provate keys will be located at node/plain-addresses.yml
+
+
 Once the node is running with twix-node start and you have funded its account, from a different terminal (but from the same folder), simply type:
 
 ```
 twix-node link
 ```
 
+In case the node can't find any node to transmit transactio, you may set an external URL:
+
+
+```
+twix-node link --url=http://20.52.233.206:3000
+```
 
 
 # E2E Testing support
