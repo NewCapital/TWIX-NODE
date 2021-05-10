@@ -83,6 +83,8 @@ The folder where the generated config, docker files and data are stored. The fol
 ```
 adduser powerusername
 usermod -aG sudo powerusername
+su powerusername
+cd
 ```
 
 # Requirements
