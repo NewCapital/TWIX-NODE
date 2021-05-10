@@ -138,12 +138,12 @@ If you see an error like:
 Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock
 ```
 
-Please follow this [guide](https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket).
+Try to logout and login, or please follow this [guide](https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket).
 
 Get TWIX Node:
 
 ```
-git clone https://github.com/NewCapital/TWIX-NODE.git
+sudo git clone https://github.com/NewCapital/TWIX-NODE.git
 ```
 
 Install TWIX NODE
