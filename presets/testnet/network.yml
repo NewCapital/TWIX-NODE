@@ -1,34 +1,34 @@
 initialCurrencyAtomicUnits: 1000000000000000
 maxMosaicAtomicUnits: 100000000000000000
 totalChainImportance: 1000000000000000
-minHarvesterBalance: 100000000000
+minHarvesterBalance: 10000000000
 maxHarvesterBalance: 1000000000000000
 minVoterBalance: 100000000000000
-networkType: 152
+networkType: 104
 minNamespaceDuration: 60d
 assemblies: 'api, dual, peer'
 harvestBeneficiaryPercentage: 15
 batchVerificationRandomSource: /dev/urandom
-currencyMosaicId: 6C57A9BA893510BA
-harvestingMosaicId: 6C57A9BA893510BA
+currencyMosaicId: 7831128EAA6516FC
+harvestingMosaicId: 7831128EAA6516FC
 baseNamespace: twix
 votingSetGrouping: 1440
 maxSecretLockDuration: 365d
 maxNamespaceDuration: 730d
 namespaceGracePeriodDuration: 60d
 blockGenerationTargetTime: 30s
-nemesisGenerationHashSeed: 6A7E80CB2F8228A1195E9A2628F0233C14B70C726301E4E954DAFB31F5DD4211
-nemesisSignerPublicKey: 2EB2977EBC9051B5F3DD326109135385753015EFFD0BB6C5C85B29D466D46BB8
-sinkAddress: TBCGCKI6K5Z5BUL7WXTNXRTHP4WBZWCTZ6YKK7Y
-harvestNetworkFeeSinkAddress: TBUFEHJEV53GHKLY4P7SZINMHA6LWPIDZ5SXPDI
-mosaicRentalFeeSinkAddress: TDOXGHPWZUANAW35ZP5NHMSGOQWC2KRVO5EHXSY
-namespaceRentalFeeSinkAddress: TDOXGHPWZUANAW35ZP5NHMSGOQWC2KRVO5EHXSY
+nemesisGenerationHashSeed: 9249D4D090E32363E1817F737EDDE828184CFA95DA084A94C6CD59053CDDB19E
+nemesisSignerPublicKey: A632F899F609B96FCE5B6954E5D4A768D30C41EAA97962E509883FCC2E7AD5AC
+sinkAddress: NAOJ3CGGRY7PEPWEF3VKTCXZFWMROL3ZT7LPOJA
+harvestNetworkFeeSinkAddress: NB4PLU35H5FYRS2R3SOSFIOH3NQB5A3EW6H4NRA
+mosaicRentalFeeSinkAddress: ND57MF36EK7EVMIL3DYGQLDAXT6G6SHMRHLP7MI
+namespaceRentalFeeSinkAddress: NCQK5IGKFIP4AMDJPXBWWSORCFHGU5LGZNA6CEI
 faucetUrl: ''
-symbolServerToolsImage: symbolplatform/symbol-server:tools-gcc-0.10.1.8
-symbolServerImage: symbolplatform/symbol-server:gcc-0.10.1.8
-minPartnerNodeVersion: 0.10.0.7
+symbolServerToolsImage: symbolplatform/symbol-server:tools-gcc-1.0.0.0
+symbolServerImage: symbolplatform/symbol-server:gcc-1.0.0.0
+minPartnerNodeVersion: 1.0.0.0
 maxPartnerNodeVersion: 1.0.255.255
-serverVersion: 0.10.1.8
+serverVersion: 1.0.0.0
 knownRestGateways:
     - 'http://20.52.157.15:3000'
     - 'http://20.52.233.206:3000'
@@ -39,14 +39,14 @@ inflation:
     starting-at-height-800000000: 0
 knownPeers:
     api-node:
-        - publicKey: 99cdcd66052e6f8db3ab5a325de396bcb71d916b7d23b2da19f811453fc764fb
+        - publicKey: 340863d0434abc7c15cc3ef8c9e01d3478f10481d0f30f32d86b4320eeb2b541
           endpoint:
               host: 20.52.157.15
               port: 7900
           metadata:
               name: TWIX-testnet-dual1
               roles: Api,Peer,Voting
-        - publicKey: 0b65930f32f43b1f2fb86c50ec39399a6515c10501671fb205ba82f3152a2c06
+        - publicKey: bd04709b3ebf7525fee2a2c45c066a52b4bf44f3244fafbf5703ee1a5d0c0423
           endpoint:
               host: 20.52.233.206
               port: 7900
@@ -54,24 +54,25 @@ knownPeers:
               name: TWIX-testnet-dual2
               roles: Api,Peer,Voting
     peer-node:
-        - publicKey: 70542b2ba62667d642dcbf37f4c671210e76ae8c5de5da33405dc7e367330ce0
+        - publicKey: fda4ddeab86bbfa4262afa81850c5f2a2c41e55c5fafa90ddbb32a6c5ea425e2
           endpoint:
               host: 20.52.131.91
               port: 7900
           metadata:
               name: TWIX-testnet-peer1
               roles: Peer,Voting
-        - publicKey: 99cdcd66052e6f8db3ab5a325de396bcb71d916b7d23b2da19f811453fc764fb
+        - publicKey: 340863d0434abc7c15cc3ef8c9e01d3478f10481d0f30f32d86b4320eeb2b541
           endpoint:
               host: 20.52.157.15
               port: 7900
           metadata:
               name: TWIX-testnet-dual1
               roles: Api,Peer,Voting
-        - publicKey: 0b65930f32f43b1f2fb86c50ec39399a6515c10501671fb205ba82f3152a2c06
+        - publicKey: bd04709b3ebf7525fee2a2c45c066a52b4bf44f3244fafbf5703ee1a5d0c0423
           endpoint:
               host: 20.52.233.206
               port: 7900
           metadata:
               name: TWIX-testnet-dual2
               roles: Api,Peer,Voting
+
