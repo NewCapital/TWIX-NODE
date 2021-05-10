@@ -145,7 +145,7 @@ Try to logout and login, or please follow this [guide](https://www.digitalocean.
 Get TWIX Node:
 
 ```
-sudo git clone https://github.com/NewCapital/TWIX-NODE.git
+git clone https://github.com/NewCapital/TWIX-NODE.git
 ```
 
 Install TWIX NODE
