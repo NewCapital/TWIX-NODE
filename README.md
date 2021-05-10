@@ -145,6 +145,7 @@ Try to logout and login, or please follow this [guide](https://www.digitalocean.
 Get TWIX Node:
 
 ```
+cd /home/powerusername
 git clone https://github.com/NewCapital/TWIX-NODE.git
 ```
 
