@@ -161,9 +161,8 @@ dockerComposeVersion: '2.4'
 dockerComposeServiceRestart: 'on-failure:2'
 dockerComposeDebugMode: false
 
-maxPartnerNodeVersion: 1.0.0.255
+maxPartnerNodeVersion: 1.0.255.255
 minPartnerNodeVersion: 1.0.0.0
-maxPartnerNodeVersion: 1.0.0.255
 
 outgoing_connections_maxConnections: 10
 outgoing_connections_maxConnectionAge: 200
