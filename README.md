@@ -197,7 +197,7 @@ USAGE
 The general usage would be:
 
 ```
-twix-node config -p testnet -a dual --customPresets name.yml
+twix-node config -p testnet -a dual --customPreset name.yml
 twix-node compose
 twix-node run -d
 ```
