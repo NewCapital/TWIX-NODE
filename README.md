@@ -170,6 +170,14 @@ mkdir node
 cd node
 ```
 
+Create node custom name:
+
+```
+cd ~/node
+touch name.yml
+echo 'friendlyName: INSERT_YOUR_NODE_NAME_HERE' > name.yml
+```
+
 Once in the working dir:
 
 <!-- usage -->
@@ -189,7 +197,7 @@ USAGE
 The general usage would be:
 
 ```
-twix-node config -p testnet -a dual
+twix-node config -p testnet -a dual --customPresets name.yml
 twix-node compose
 twix-node run -d
 ```

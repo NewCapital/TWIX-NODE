@@ -27,7 +27,7 @@ reservedRootNamespaceNames: twix
 defaultDynamicFeeMultiplier: 100
 minFeeMultiplier: 100
 maxTimeBehindPullTransactionsStart: 5m
-epochAdjustment: 1573430400s 
+epochAdjustment: 1514757600s 
 nodeEqualityStrategy: host
 maxVotingKeyLifetime: 360
 minVotingKeyLifetime: 112
