@@ -154,8 +154,7 @@ Install TWIX NODE
 ```
 cd TWIX-NODE
 npm i
-sudo echo "export PATH=\$PATH:$(pwd)/bin" >> ~/.bashrc
-source ~/.bashrc
+npm install -g
 cd ..
 ```
 Logout and Login
@@ -175,6 +174,7 @@ Once in the working dir:
 
 <!-- usage -->
 ```sh-session
+$ npm install -g twix-node
 $ twix-node COMMAND
 running command...
 $ twix-node (-v|--version|version)
