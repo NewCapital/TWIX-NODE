@@ -173,9 +173,14 @@ cd node
 Create node custom name:
 
 ```
-cd ~/node
-touch name.yml
-echo 'friendlyName: INSERT_YOUR_NODE_NAME_HERE' > name.yml
+cd ~/node`
+```
+
+```
+echo "nodes:
+  -
+    friendlyName: 'REPLACE_NODE_NAME_HERE'
+" > name.yml
 ```
 
 Once in the working dir:
